@@ -5,7 +5,7 @@
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>End Date</column_label>
@@ -28,7 +28,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="">glide_date_time</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>255</max_length>
         <name>x_782420_loaner_0_loaner_reqest</name>
         <next_element/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Loaner Request Application ">3d03d45a53e00310b83051a0a0490ec1</sys_scope>
         <sys_update_name>sys_dictionary_x_782420_loaner_0_loaner_reqest_end_date</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-01 11:48:45</sys_updated_on>
+        <sys_updated_on>2026-05-01 14:46:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

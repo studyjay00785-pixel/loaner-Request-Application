@@ -13,7 +13,7 @@
         <element label="Other" max_length="40" name="other" type="string"/>
         <element label="Location to be used" max_length="40" name="location_to_be_used" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Closed" max_length="40" name="closed" type="glide_date_time"/>
-        <element label="End Date" max_length="255" name="end_date" type="glide_date_time"/>
+        <element label="End Date" mandatory="true" max_length="255" name="end_date" type="glide_date_time"/>
         <element label="Start Date" mandatory="true" max_length="255" name="start_date" type="glide_date_time"/>
         <element choice="3" default="sc" label="depot" max_length="40" name="depot" type="choice">
             <choice>

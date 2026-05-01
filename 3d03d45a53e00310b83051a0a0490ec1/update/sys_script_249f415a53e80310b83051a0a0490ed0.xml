@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_782420_loaner_0_loaner_reqest</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Validate Start and End Dates</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    (function executeRule(current, previous /*null when async*/ ) {
+
+        if (current.start_date.nil() || current.end_date.nil())
+            return;
+
+        var start = new GlideDateTime(current.start_date.getGlideObject().getValue());
+        var end = new GlideDateTime(current.end_date.getGlideObject().getValue());
+
+        if (end.before(start)) {
+            gs.addErrorMessage('End date cannot be before start date.');
+            current.setAbortAction(true);
+        }
+
+    })(current, previous);
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-01 15:19:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>249f415a53e80310b83051a0a0490ed0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Validate Start and End Dates</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Request Application " source="x_782420_loaner_0">3d03d45a53e00310b83051a0a0490ec1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request Application ">3d03d45a53e00310b83051a0a0490ec1</sys_scope>
+        <sys_update_name>sys_script_249f415a53e80310b83051a0a0490ed0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-01 15:26:24</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=249f415a53e80310b83051a0a0490ed0"/>
+</record_update>
