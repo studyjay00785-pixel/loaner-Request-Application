@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="bc73949a53e00310b83051a0a0490e18" extends="task" label="Loaner Reqest" max_length="40" name="x_782420_loaner_0_loaner_reqest" type="collection"/>
+    <element db_object_id="bc73949a53e00310b83051a0a0490e18" extends="task" label="Loaner Reqest" max_length="40" name="x_782420_loaner_0_loaner_reqest" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="worknotes" max_length="4000" name="worknotes" type="journal"/>
+        <element choice="3" default="cmdb_ci_computer" label="item type" max_length="40" name="item_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Projector" sequence="2" value="cmdb_ci_projector"/>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="cmdb_ci_computer"/>
+                <element inactive_on_update="false" label="Moblie Phone" sequence="1" value="cmdb_ci_moblie_device"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Addtional Comment" max_length="4000" name="addtional_comment" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Opened" max_length="40" name="opened" type="glide_date_time"/>
+        <element label="Other" max_length="40" name="other" type="string"/>
+        <element label="Location to be used" max_length="40" name="location_to_be_used" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Closed" max_length="40" name="closed" type="glide_date_time"/>
+        <element label="End Date" max_length="255" name="end_date" type="glide_date_time"/>
+        <element label="Start Date" mandatory="true" max_length="255" name="start_date" type="glide_date_time"/>
+        <element choice="3" default="sc" label="depot" max_length="40" name="depot" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Santa Clara" sequence="2" value="sc"/>
+                <element inactive_on_update="false" label="Buenos Aires" sequence="1" value="ba"/>
+                <element inactive_on_update="false" label="Singapore" sequence="3" value="singapore"/>
+                <element inactive_on_update="false" label="New York" sequence="0" value="ny"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Updated" max_length="40" name="updated" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Updated By" max_length="32" name="updated_by" reference="sys_user" type="reference"/>
+        <element label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+    </element>
 </database>
