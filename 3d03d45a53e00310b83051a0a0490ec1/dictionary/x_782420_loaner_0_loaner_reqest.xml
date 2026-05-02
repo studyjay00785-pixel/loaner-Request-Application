@@ -15,6 +15,7 @@
         <element attributes="edge_encryption_enabled=true" label="Closed" max_length="40" name="closed" type="glide_date_time"/>
         <element label="End Date" mandatory="true" max_length="255" name="end_date" type="glide_date_time"/>
         <element label="Start Date" mandatory="true" max_length="255" name="start_date" type="glide_date_time"/>
+        <element label="Pick Up Reminder" max_length="255" name="pick_up_reminder" type="glide_date_time"/>
         <element choice="3" default="sc" label="depot" max_length="40" name="depot" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Santa Clara" sequence="2" value="sc"/>
