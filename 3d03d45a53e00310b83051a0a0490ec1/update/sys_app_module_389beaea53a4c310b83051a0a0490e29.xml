@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>false</active>
-        <application display_value="Loaner Request">f8141cda53e00310b83051a0a0490e07</application>
+        <application/>
         <assessment/>
         <device_type/>
         <filter/>
