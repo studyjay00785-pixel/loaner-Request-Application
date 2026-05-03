@@ -25,7 +25,8 @@
         <run_time>1970-01-01 08:01:00</run_time>
         <run_type>daily</run_type>
         <run_weekinmonth>1</run_weekinmonth>
-        <script><![CDATA[var lutil = new LoanerUtlis();
+        <script><![CDATA[gs.info('Loaner item Pick Up Scheduled Script ran');
+var lutil = new LoanerUtlis();
 
 var plist = [];
 
@@ -36,6 +37,8 @@ for (var i=0; i<plist.length; i++) {
    lutil.sendPickupReminder(plist[i]);
 
 }
+
+
 
 
 // It is for the single record execution
@@ -70,14 +73,14 @@ while (gr.next()) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-02 17:18:59</sys_created_on>
         <sys_id>8743fe6e53e4c310b83051a0a0490eae</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Loaner item Pick Up</sys_name>
         <sys_package display_value="Loaner Request Application " source="x_782420_loaner_0">3d03d45a53e00310b83051a0a0490ec1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Request Application ">3d03d45a53e00310b83051a0a0490ec1</sys_scope>
         <sys_update_name>sysauto_script_8743fe6e53e4c310b83051a0a0490eae</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-02 18:42:16</sys_updated_on>
+        <sys_updated_on>2026-05-03 10:39:14</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
