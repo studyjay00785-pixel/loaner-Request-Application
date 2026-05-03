@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_782420_loaner_0.LocationScript</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>LocationScript</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var LocationScript = Class.create();
+LocationScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+
+
+    getCityCountry: function() {
+
+        gs.info('getCityCountry called the city ' + this.getParameter('sysparm_usersysid'));
+
+        var userSysId = this.getParameter('sysparm_usersysid');
+        var userGr = new GlideRecord('sys_user');
+        if (userGr.get(userSysId)) {
+            var city = userGr.location.city.toString();
+            var country = userGr.location.country.toString();
+            return city + ',' + country;
+        }
+        return '';
+
+
+
+    },
+
+
+    type: 'LocationScript'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 18:15:33</sys_created_on>
+        <sys_id>454b88c753a08710b83051a0a0490e5b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>LocationScript</sys_name>
+        <sys_package display_value="Loaner Request Application " source="x_782420_loaner_0">3d03d45a53e00310b83051a0a0490ec1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request Application ">3d03d45a53e00310b83051a0a0490ec1</sys_scope>
+        <sys_update_name>sys_script_include_454b88c753a08710b83051a0a0490e5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 18:16:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

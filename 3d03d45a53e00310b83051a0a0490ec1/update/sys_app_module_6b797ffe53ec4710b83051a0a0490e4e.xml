@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <application display_value="Loaner Requests">c376a3ba536c4710b83051a0a0490ef9</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="x_782420_loaner_0_loaner_reqest">state=3^EQ<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
-        <link_type>SEPARATOR</link_type>
+        <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Link</mobile_title>
+        <mobile_title>Closed</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name/>
+        <name>x_782420_loaner_0_loaner_reqest</name>
         <order/>
         <override_menu_roles>false</override_menu_roles>
         <query/>
@@ -21,21 +23,21 @@
         <roles>x_782420_loaner_0.admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-02 16:38:46</sys_created_on>
+        <sys_created_on>2026-05-03 16:57:27</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>389beaea53a4c310b83051a0a0490e29</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Link type </sys_name>
+        <sys_id>6b797ffe53ec4710b83051a0a0490e4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Closed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Request Application " source="x_782420_loaner_0">3d03d45a53e00310b83051a0a0490ec1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Request Application ">3d03d45a53e00310b83051a0a0490ec1</sys_scope>
-        <sys_update_name>sys_app_module_389beaea53a4c310b83051a0a0490e29</sys_update_name>
+        <sys_update_name>sys_app_module_6b797ffe53ec4710b83051a0a0490e4e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-03 15:34:38</sys_updated_on>
+        <sys_updated_on>2026-05-03 16:57:27</sys_updated_on>
         <timeline_page/>
-        <title>Link type </title>
+        <title>Closed</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
